@@ -1,0 +1,218 @@
+/* ---- GLOBAL STYLING ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+
+/* ------- HIGH LIGHTS SECTION -------- */
+.high-light {
+    height: 16vh;
+    width: 100%;
+    padding: 20px;
+    border: 0.2px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: highlight 1s;
+}
+@keyframes highlight {
+    0% {
+        opacity: 0%;
+    }
+}
+.high-light > article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.high-light-icon {
+    height: 50px;
+    width: 50px;
+    /* padding: 40px 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #F1ECE6;
+}
+.high-light > article p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.high-light > article p:nth-child(2) {
+    color: gray;
+    font-size: 14px;
+}
+/* ---- SHOP BY CATEGORIES ---- */
+.shop-by-categories{
+    margin: 20px auto;
+    width: 90%;
+}
+.shop-categories {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.categorie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cate-pic {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition-duration: 0.2s;
+}
+.cate-pic:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cate-pic-1 {
+    background-image: url('./images/boy.png');
+}
+.cate-pic-2 {
+    background-image: url('./images/girl.png');
+}
+.cate-pic-3 {
+    background-image: url('./images/shoes.png');
+}
+.cate-pic-4 {
+    background-image: url('./images/hand-bag.png');
+}
+.cate-pic-5 {
+    background-image: url('./images/coolers.png');
+}
+
+/* ------ BEST SELLER SECTION ------ */
+.best-sellers-section {
+    margin: 20px auto;
+    width: 90%;
+}
+.best-sellers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 20px;
+    gap: 10px;
+}
+.product-pic {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+.product-pic:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.product-pic-1 {
+    background-image: url('./images/product-1.png');
+}
+.product-pic-2 {
+    background-image: url('./images/product-2.png');
+}
+.product-pic-3 {
+    background-image: url('./images/product-3.png');
+}
+.product-pic-4 {
+    background-image: url('./images/product-4.png');
+}
+.product-pic-5 {
+    background-image: url('./images/product-5.png');
+}
+.product-details > p {
+    margin-bottom: 10px;
+}
+.price {
+    font-weight: bold;
+}
+.product-details i {
+    color: gold;
+}
+/* ------ NEWSLETTER EMAIL SUBMITION SECTION ------ */
+.news-letter {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    min-width: 575px;
+    background-color: #DED9D3;
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* left side of the email submition section */
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.email-icon {
+    font-size: 28px;
+}
+.offer {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.call-to-action {
+    color: gray;
+    font-size: 12px;
+}
+/* right side of the email submition section */
+.email-submition {
+    min-width: 275px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+input[placeholder="Enter your email"] {
+    border: none;
+    background-color: transparent;
+    padding: 0 0 0 9px;
+}
+input[placeholder="Enter your email"]:focus {
+    outline: none;
+}
+input[value="SUBSCRIBE"] {
+    border: none;
+    border-radius: 0 6px 6px 0;
+    color: white;
+    background-color: black;
+    padding: 9px;
+}
+/* ---- STYLE'S FOR MULTIPLE SCREEN SIZE ---- */
+/* mobile portraitmobile lanscape and tablets */
+@media (max-width:991.99px) {
+    .high-light {
+        display: none;
+    }
+}
+/* mobile lanscape and tablets */
+@media (max-width:575.99px) {
+    .news-letter {
+        min-width: 50%;
+        height: auto;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .call-to-action-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}

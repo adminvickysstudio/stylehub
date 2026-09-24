@@ -1,0 +1,126 @@
+/* ---- GLOBLE STYLING ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+.info-section, .form-section, .map-section {
+    border: 0.3px solid lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/* ---- INFO SECTION ---- */
+
+.info-section h3 {
+    margin-bottom: 20px;
+}
+.info > div {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+.info-icon {
+    font-size: 18px;
+    color: #1F2328;
+    background-color: lightgray;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-titles {
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.info-details {
+    font-size: 14px;
+    line-height: 1.2;
+    color: gray;
+}
+/* ---- CONTACT FORM SECTION ---- */
+
+.form-section h3 {
+    margin-bottom: 20px;
+}
+.form-section p {
+    margin-bottom: 10px;
+}
+.form-section p {
+    color: gray;
+}
+.first-last-name {
+    display: flex;
+}
+.form-section label {
+    font-size: 12px;
+}
+.form-section input, textarea {
+    margin: 5px 0px;
+}
+.first-last-name {
+    width: 100%;
+}
+.first-last-name div {
+    width: 50%;
+}
+.first-last-name div:nth-child(1) {
+    margin-right: 10px;
+}
+.form-section [name] {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+.form-section [name="email"],
+.form-section [name="message"] {
+    width: 100%;
+}
+.form-section input[type="submit"] {
+    color: #1F2328;
+    background-color: lightgray;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+}
+/* ---- MAP SECTION ---- */
+
+.map-section h3 {
+    margin-bottom: 20px;
+}
+.map-section p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+.map-section button {
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+.map-section a {
+    text-decoration: none;
+    color: #1F2328;
+}

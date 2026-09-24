@@ -1,0 +1,333 @@
+/* ---- GLOBAL STYLING ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+
+/* STYLE FOR THE TOP NAV-HEADER */
+.nav-header {
+    width: 100%;
+    height: 24px;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #1F2328;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.nav-header > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+.nav-header > ul a {
+    text-decoration: none;
+    color: white;
+}
+/* ---- STYLES FOR NAVBAR ----- */
+.navbar {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 24px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    animation: navbar 0.3s ease-in;
+}
+@keyframes navbar {
+    0% {
+        transform: translateY(-100%)
+    }
+}
+/* logo */
+.logo > span {
+    color: red;
+}
+/* navigation */
+.navbar > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.navbar > ul a {
+    text-decoration: none;
+    color: black;
+}
+.navbar > ul li {
+    transition-duration: 0.2s;
+}
+
+.navbar > ul > li:hover {
+    background-color: #FAF8F5;
+    padding: 20px 5px 17px 5px;
+    border-bottom: 4px solid red;
+}
+.cat-menu > ul {
+    list-style-type: none;
+}
+.cat-menu {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #FAF8F5;
+    display: none;
+    position: absolute;
+    top: 60px;
+    padding: 10px;
+}
+.cat-menu > ul > li {
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.cat-menu > ul > li:hover {
+    background-color: #d7d5d3;
+}
+.categories {
+    position: relative;
+}
+.categories:hover > .cat-menu {
+    display: block;
+}
+/* tools */
+.tools {
+    display: flex;
+    gap: 10px;
+}
+.cart-container {
+    text-decoration: none;
+    color: #1F2328;
+}
+.cart {
+    position: relative;
+}
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: -50%;
+    right: -50%;
+}
+.cart-and-hm {
+    /* this will visible on mobile view */
+    display: none;
+}
+.hamburger-menu {
+    /* this menu will be showen on mobile view */
+    display: none;
+    padding: 8px;
+    border: 0.5px solid;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    position: relative;
+}
+.hamburger-menu:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+.hamburger-menu:hover .hm-menu {
+    display: block;
+}
+.hm-menu {
+    display: none;  
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    border-radius: 10px;
+    background-color: #FAF8F5;
+    border: 0.5px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hamburger-menu ul {
+    list-style-type: none;
+}
+.hamburger-menu ul li {
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.hm-menu {
+    padding: 10px;
+}
+.hm-menu ul li:hover {
+    background-color: #d7d5d3;
+}
+.hamburger-menu ul li a {
+    color: #1F2328;
+    text-decoration: none;
+}
+/* ------ STYLE FOR HERO SECTION ------ */
+.hero {
+    width: 100%;
+    height: 70vh;
+    margin-top: 84px;
+    background-image: url('./images/hero-section-background-img.png');
+    background-size: cover;
+    animation: hero 1s;
+}
+@keyframes hero {
+    0% {
+        opacity: 0%;
+    }
+}
+.hero > article {
+    height: 100%;
+    width: 25%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    animation: details 0.5s ease-in;
+}
+@keyframes details {
+    0% {
+        transform: translateX(-100%);
+    }
+}
+.hero p:nth-child(1) {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+}
+.hero p:nth-child(3) {
+    color: gray;
+    font-size: 14px;
+}
+.hero button {
+    padding: 12px 16px;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+}
+.hero button a {
+    text-decoration: none;
+    color: white;
+}
+/* ---- STYLE'S FOR MULTIPLE SCREEN SIZE ---- */
+/* mobile portrait */
+@media (max-width:575.99px) {
+    /* navigation header section */
+    .nav-header {
+        justify-content: center;
+    }
+    .nav-header > ul {
+        display: none;
+    }
+    /* actual navbar */
+    .navbar > ul {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    /* hamburger menu */
+    .tools {
+        display: none;
+    }
+    .cart-and-hm {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero {
+        width: 100%;
+        background-image: url('./images/mobile-hero-bg.png');
+        display: flex;
+        align-items: end;
+    }
+    .hero > article {
+        width: 90%;
+        height: 40%;
+        margin: 10px auto;
+        background-color: rgba(215, 191, 166, 0.916);
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        gap: 5px;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+    .hero > article > button {
+        padding: 6px 8px;
+    }
+    .hero > article > p:nth-child(1) {
+        font-size: 10px;
+    }
+    .hero > article > p:nth-child(3) {
+        font-size: 12px;
+        color: #1F2328;
+    }
+
+}
+@media (min-width:576px) and (max-width:681.99px) {
+    .cart-and-hm {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero > article {
+        width: 45%;
+        gap: 5px;
+    }
+}
+/* mobile lanscape and tablet's */
+@media (min-width:576px) and (max-width:991.99px) {
+    /* navigation header section */
+    .nav-header {
+        justify-content: space-between;
+    }
+    .nav-header > ul {
+        display: flex;
+    }
+    /* actual navbar */
+    .navbar > ul {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .tools {
+        display: none;
+    }
+    .cart-and-hm {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    /* hero section */
+    .hero h1 {
+        font-size: 24px;
+    }
+}

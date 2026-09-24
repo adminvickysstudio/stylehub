@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./src/add-to-cart.css">
+</head>
+<body>
+    <header>
+        <!-- NAVBAR FOR THE ADD TO CART PAGE -->
+        <nav class="navbar">
+            <div class="back-btn">
+                <a href="./shop.html"><i class="fa-solid fa-angle-left"></i></a>
+            </div>
+            <!-- navbar ends here -->
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION OF ADD TO CART PAGE -->
+    <main>
+        <!-- cart products section -->
+        <section class="cart-products">
+
+            <article class="cart-product-header">
+                <p>Your Cart &#40;3&#41;</p>
+                <a href="./shop.html">Countinue Shopping <i class="fa-solid fa-arrow-right-long"></i></a>
+                <!-- cart product ends here -->
+            </article>
+
+            <table>
+                <tr>
+                    <td class="cart-item-container">
+                        <div class="cart-item-img-container">
+                            <img src="./src/images/boy.png" alt="jacket">
+                        </div>
+
+                        <div class="cart-item-data-container">
+                            <p class="item-name">
+                                Classic Demin Jacket
+                            </p>
+                            <div class="color-and-size">
+                                <span>Light Blue</span>
+                                <span>&#124;</span>
+                                <span>M</span>
+                            </div>
+                            <div class="stock-status">
+                                In stock
+                            </div>
+                            <!-- cart item data container ends here -->
+                        </div>
+                        <!-- cart item container ends here -->
+                    </td>
+
+                    <td class="price">
+                        $69.99
+                    </td>
+
+                    <td>
+                        <div class="quantity">
+                            <button>&plus;</button>
+                            <p>1</p>
+                            <button>&minus;</button>
+                        </div>
+                    </td>
+
+                    <td class="dlt-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="cart-item-container">
+                        <div class="cart-item-img-container">
+                            <img src="./src/images/item-7.png" alt="jacket">
+                        </div>
+
+                        <div class="cart-item-data-container">
+                            <p class="item-name">
+                                Casual Sneakers
+                            </p>
+                            <div class="color-and-size">
+                                <span>White</span>
+                                <span>&#124;</span>
+                                <span>42</span>
+                            </div>
+                            <div class="stock-status">
+                                In stock
+                            </div>
+                            <!-- cart item data container ends here -->
+                        </div>
+                        <!-- cart item container ends here -->
+                    </td>
+
+                    <td class="price">
+                        $49.99
+                    </td>
+
+                    <td>
+                        <div class="quantity">
+                            <button>&plus;</button>
+                            <p>1</p>
+                            <button>&minus;</button>
+                        </div>
+                    </td>
+
+                    <td class="dlt-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="cart-item-container">
+                        <div class="cart-item-img-container">
+                            <img src="./src/images/product-5.png" alt="jacket">
+                        </div>
+
+                        <div class="cart-item-data-container">
+                            <p class="item-name">
+                                Leather Backpack
+                            </p>
+                            <div class="color-and-size">
+                                <span>Brown</span>
+                                <span>&#124;</span>
+                                <span>One Size</span>
+                            </div>
+                            <div class="stock-status">
+                                In stock
+                            </div>
+                            <!-- cart item data container ends here -->
+                        </div>
+                        <!-- cart item container ends here -->
+                    </td>
+
+                    <td class="price">
+                        $89.99
+                    </td>
+
+                    <td>
+                        <div class="quantity">
+                            <button>&plus;</button>
+                            <p>1</p>
+                            <button>&minus;</button>
+                        </div>
+                    </td>
+
+                    <td class="dlt-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </td>
+                </tr>
+            </table>
+            <!-- cart product section ends here -->
+        </section>
+
+        <!-- order summary section -->
+         <section class="order-summary-container">
+            <div class="order-summary-title">
+                Order Summary
+            </div>
+
+            <div class="order-summary">
+                <div class="summary">
+                    <span>Subtotal &#40;3 items&#41;</span>
+                    <span>&#36;20.97</span>
+                </div>
+                <div class="summary">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="summary">
+                    <span>Estimated Tax</span>
+                    <span>&#36;16.80</span>
+                </div>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <span>&#36;226.77</span>
+            </div>
+
+            <button class="proceed-btn">Proceed to Checkout <i class="fa-solid fa-arrow-right"></i></button><br>
+            <button class="continue-shopping"><a href="./shop.html">Continue Shopping</a></button>
+            <!-- order summary ends here -->
+         </section>
+        <!-- main section ends here -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* ---- GLOBAL STYLING ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+:root {
+    --primary-border-radius: 10px;
+    --secondary-border-radius: 6px;
+    --primary-bgc: white; /* bgc stand's for background color */
+    --primary-color: #A86645;
+    --hover-color: #8D5338;
+}
+/* ---- NAVBAR ---- */
+header {
+    margin: 15px 0;
+}
+.back-btn {
+    padding: 8px 10px;
+    border: 0.3px solid black;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.back-btn:hover {
+    background-color: lightgray;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar i {
+    color: black;
+}
+/* MAIN */
+main {
+    display: flex;
+    gap: 15px;
+}
+/* ---- CART PRODUCTS SECTION ---- */
+.cart-products {
+    flex: 3;
+    padding: 25px;
+    border: 0.3px solid lightgray;
+    border-radius: var(--primary-border-radius);
+    background-color: var(--primary-bgc);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.cart-product-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cart-product-header > p {
+    font-weight: bold;
+}
+.cart-product-header > a {
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+table {
+    width: 100%;
+}
+.cart-item-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.cart-item-img-container {
+    height: 100px;
+    width: 120px;
+    border-radius: 6px;
+}
+.cart-item-img-container > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.cart-item-data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item-name {
+    font-weight: bold;
+}
+.color-and-size > span {
+    font-size: 14px;
+    color: gray;
+}
+.stock-status {
+    font-size: 12px;
+    color: green;
+}
+.price {
+    font-weight: bold;
+    text-align: center;
+}
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    border: 0.2px solid lightgray;
+}
+.quantity > button {
+    padding: 2px 6px;
+    border: none;
+}
+.dlt-btn {
+    text-align: center;
+}
+/* ---- ORDER SUMMARY SECTION ---- */
+.order-summary-container {
+    flex: 2;
+    padding: 20px;
+    background-color: var(--primary-bgc);
+    border: 0.3px solid lightgray;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.order-summary-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.order-summary {
+    padding-bottom: 5px;
+    border-bottom: 0.2px solid lightgray;
+    margin-bottom: 15px;
+}
+.summary {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.total {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.proceed-btn, .continue-shopping {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+.proceed-btn {
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 10px;
+}
+.proceed-btn:hover {
+    background-color: var(--hover-color);
+}
+.continue-shopping {
+    background-color: var(--primary-bgc);
+    border: 0.2px solid lightgray;
+}
+.continue-shopping > a {
+    text-decoration: none;
+    color: black;
+}
+.continue-shopping:hover {
+    background-color: lightgray;
+}
+/* ---- STYLE'S FOR MULTIPLE SCREEN SIZE ---- */
+/* mobile portrait, mobile lanscape and tablets */
+@media (max-width:991.99px) {
+    body {
+        width: 100%;
+        padding: 15px;
+    }
+    .cart-products {
+        flex: 2;
+    }
+    .order-summary-container {
+        flex: 1;
+    }
+}
+@media (max-width:850.99px) {
+    main {
+        flex-direction: column;
+    }
+}

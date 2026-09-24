@@ -1,0 +1,72 @@
+
+/* GLOBAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+/* ------ FOOTER ------ */
+/* top footer */
+.footer-top {
+    width: 100%;
+    background-color: #1F2328;
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-bottom: 0.1px solid gray;
+    gap: 10px;
+}
+.footer-top > article {
+    padding: 10px;
+}
+.footer-top h3, .footer-top h4, .footer-top p {
+    margin-bottom: 20px;
+}
+.footer-top p {
+    line-height: 1.5;
+}
+.footer-top ul {
+    list-style-type: none;
+}
+.footer-top li {
+    margin-bottom: 10px;
+}
+.footer-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 8px 8px 8px 8px;
+    border: 0.1px solid gray;
+}
+.footer-form > input {
+    border: none;
+    background-color: transparent;
+}
+.footer-form > input:focus {
+    outline: none;
+}
+.footer-form > button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+/* footer bottom */
+.footer-bottom {
+    width: 100%;
+    height: 36px;
+    background-color: #1F2328;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy-rights {
+    color: lightgray;
+    font-size: 14px;
+}

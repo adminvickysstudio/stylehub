@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./src/header.css">
+    <link rel="stylesheet" href="./src/footer.css">
+    <link rel="stylesheet" href="./src/blog.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <!-- top navheader -->
+        <nav class="nav-header">
+            <p>Free shopping on all orders over $100</p>
+            <ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Help & Support</a></li>
+            </ul>
+            <!-- top navheader ends here -->
+        </nav>
+
+        <!-- actual navbar -->
+        <nav class="navbar">
+            <h2 class="logo">STYLE<span>HUB</span></h2>
+            <ul>
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./about-us.html" target="_blank">About</a></li>
+                <li><a href="./contact-us.html" target="_blank">Contact</a></li>
+                <li><a href="./shop.html" target="_blank">Shop</a></li>
+                <li><a href="./blog.html" target="_blank">Blog</a></li>
+                <li class="categories">
+                    <div>
+                        <a href="#">Categories </a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="cat-menu">
+                        <ul>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="tools">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <a href="./add-to-cart.html" class="cart-container">
+                    <i class="fa-solid fa-cart-shopping cart">
+                        <p class="cart-count">3</p>
+                    </i>
+                </a>
+            </div>
+
+            <div class="cart-and-hm">
+                <!-- this will show on small size screens -->
+                <a href="./add-to-cart.html" class="cart-container">
+                    <i class="fa-solid fa-cart-shopping cart">
+                        <p class="cart-count">3</p>
+                    </i>
+                </a>
+
+
+                <div class="hamburger-menu">
+                    <nav class="hm-menu">
+                        <ul>
+                            <li><a href="./index.html" target="_blank">Home</a></li>
+                            <li><a href="./about-us.html" target="_blank">About</a></li>
+                            <li><a href="./contact-us.html" target="_blank">Contact</a></li>
+                            <li><a href="./shop.html" target="_blank">Shop</a></li>
+                            <li><a href="./blog.html" target="_blank">Blog</a></li>
+                        </ul>
+                        <!-- hm stands for hamburger -->
+                    </nav>
+                    <!-- this menu will be showen on mobile view -->
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- hamburger menu ends here -->
+                </div>
+                <!-- cart and hm ends hear -->
+            </div>
+            <!-- navbar ends here -->
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <article>
+                <p>OUR BLOG</p>
+                <h1>
+                    Style Tips, Trends & More
+                </h1>
+                <p>
+                    Stay inspired with the latest trends, styling tips,
+                    beauty guides and lifestyle ideas.
+                </p>
+                <button><a href="#">SHOP NOW</a></button>
+            </article>
+            <!-- hero section ends here -->
+        </section>
+    </header>
+
+    <!-- MAIN SECTION -->
+     <main>
+        <!-- BLOG PAGE SIDE BARSECTION -->
+         <aside class="blog-side-bar">
+            <!-- container for search bar and blog categories -->
+             <div class="search-categories-container">
+                 <!-- search bar -->
+                 <div class="search-container">
+                     <input class="search" type="search" placeholder="Search articles...">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     <!-- search bar ends here -->
+                 </div>
+     
+                 <!-- this category will show on small screens -->
+                 <div class="mobile-blog-categories">
+                     <p class="category">Categories</p>
+                     <i class="fa-solid fa-chevron-down"></i>
+
+                     <div class="mobile-category-data">
+                        <div class="blog-category">
+                            <span>Fashion Trends</span>
+                            <span>(5)</span>
+                        </div>
+     
+                        <div class="blog-category">
+                            <span>Style Guide</span>
+                            <span>(4)</span>
+                        </div>
+        
+                        <div class="blog-category">
+                            <span>Beauty & Lifestyle</span>
+                            <span>(3)</span>
+                        </div>
+        
+                        <div class="blog-category">
+                            <span>Shopping Guide</span>
+                            <span>(2)</span>
+                        </div>
+     
+                        <div class="blog-category">
+                            <span>Travel & Adventure</span>
+                            <span>(1)</span>
+                        </div>
+                        <!-- mobile category data ends here -->
+                     </div>
+                     <!-- mobile blog-categories ends here -->
+                    </div>
+                 <!-- blog side categories -->
+                 <div class="blog-categories-container">
+                     <h4>Categories</h4>
+     
+                     <div class="blog-category">
+                         <span>Fashion Trends</span>
+                         <span>(5)</span>
+                     </div>
+     
+                     <div class="blog-category">
+                         <span>Style Guide</span>
+                         <span>(4)</span>
+                     </div>
+     
+                     <div class="blog-category">
+                         <span>Beauty & Lifestyle</span>
+                         <span>(3)</span>
+                     </div>
+     
+                     <div class="blog-category">
+                         <span>Shopping Guide</span>
+                         <span>(2)</span>
+                     </div>
+     
+                     <div class="blog-category">
+                         <span>Travel & Adventure</span>
+                         <span>(1)</span>
+                     </div>
+                     <!-- categories ends here -->
+                 </div>
+                 <!-- search and categories container ends here -->
+             </div>
+
+            <!-- side bar recent posts -->
+             <div class="recent-posts-container">
+                <h4>Recent Posts</h4>
+
+                <div class="recent-post">
+                    <div class="recent-post-thumbnail-container">
+                        <img src="./src/images/boys-wardrobe.png" alt="wardrobe essentials">
+                    </div>
+                    <div class="recent-post-details">
+                        <h5 class="recent-post-title">
+                            Top 10 wardrobe Essentials for 
+                            Every Season
+                        </h5>
+                        <p class="recent-post-date">Apr 24, 2025</p>
+                    </div>
+                </div>
+
+                <div class="recent-post">
+                    <div class="recent-post-thumbnail-container">
+                        <img src="./src/images/boy-model.png" alt="boy model">
+                    </div>
+                    <div class="recent-post-details">
+                        <h5 class="recent-post-title">
+                            How to Style Oversized
+                            Jackets Like a Pro
+                        </h5>
+                        <p class="recent-post-date">Apr 20, 2025</p>
+                    </div>
+                </div>
+
+                <div class="recent-post">
+                    <div class="recent-post-thumbnail-container">
+                        <img src="./src/images/girl-model.png" alt="girl model">
+                    </div>
+                    <div class="recent-post-details">
+                        <h5 class="recent-post-title">
+                            Simple Self Care Habits
+                            for a Confident You
+                        </h5>
+                        <p class="recent-post-date">Apr 16, 2025</p>
+                    </div>
+                </div>
+
+                <div class="recent-post">
+                    <div class="recent-post-thumbnail-container">
+                        <img src="./src/images/white-shoes.png" alt="white shoes">
+                    </div>
+                    <div class="recent-post-details">
+                        <h5 class="recent-post-title">
+                            The Best Sneakers for 
+                            Casual & Everyday Wear
+                        </h5>
+                        <p class="recent-post-date">Apr 12, 2025</p>
+                    </div>
+                </div>
+                <!-- recent post ends here -->
+             </div>
+            <!-- blog section side bar ends here -->
+         </aside>
+
+        <!-- BLOG SECTION -->
+        <section class="blog-section">
+            <h4>BLOG POST'S</h4>
+            <article class="blogs-container">
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/boys-wardrobe.png" alt="essentials dresses">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">FASHION TRENDS</p>
+                        <h4 class="post-title">Top 10 Wardrobe Essentials For Every Season</h4>
+                        <p class="post-discription">
+                            Build a versatile wardrobe with these 
+                            must have pieces that work for every
+                            season and occasion. 
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 24, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">8:00AM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+                
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/boy-model.png" alt="boy model">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">STYLE GUIDE</p>
+                        <h4 class="post-title">How to Style Oversized Jackets Like a Pro</h4>
+                        <p class="post-discription">
+                            Learn how to style oversized jackets 
+                            for a relaxed yet polished look, From 
+                            casual to smart. 
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 20, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">9:30AM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/girl-model.png" alt="girl model">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">BEAUTY & LIFESTYLE</p>
+                        <h4 class="post-title">Simple Self-Care Habits for a Confident You</h4>
+                        <p class="post-discription">
+                            Small daily habits can make a big 
+                            difference. Discover easy self care tips 
+                            to feel your best, inside and out.
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 20, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">6:30PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/white-shoes.png" alt="white shoes">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">SHOPPING GUIDE</p>
+                        <h4 class="post-title">The Best Sneakers for Casual & Everyday Wear</h4>
+                        <p class="post-discription">
+                            Comfort meets style! Explore our top 
+                            picks for smeakers that go with 
+                            every outfit.
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 12, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">11:25AM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/girls-wardrobe.png" alt="girl wardrobe">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">FASHION TRENDS</p>
+                        <h4 class="post-title">Spring Fashion Trends You'll Love in 2025</h4>
+                        <p class="post-discription">
+                            From soft pastels to relaxed slihouettes,
+                            explore the top fashion trends 
+                            for this spring season.
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 6, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">1:45PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+
+                <article class="blog-post">
+                    <article class="post-thumnail-img">
+                        <img src="./src/images/travel-pack.png" alt="travel pack">
+                    </article>
+
+                    <article class="post-details">
+                        <p class="post-category">LIFESTYLE</p>
+                        <h4 class="post-title">Travel in Style: What to Pack for Your Next Trip</h4>
+                        <p class="post-discription">
+                            Make your travel days easier (and 
+                            more stylish) with our packing checklist
+                            and outfit ideas.
+                        </p>
+                        <div class="author-details">
+                            <div class="author-pic"></div>
+                            <div class="author-data">
+                                <p class="author-name">By StyleHub Team</p>
+                                <div class="published-data">
+                                    <span class="date">Apr 6, 2025</span>
+                                    <span class="dot"> &#183; </span>
+                                    <span class="time">3:00PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="read-more-container">
+                            <a href="#" class="read-more">
+                                <span class="read-more-text">Read More</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <!-- blog details ends here -->
+                    </article>
+                </article>
+                <!-- blog container ends here -->
+            </article> 
+            <!-- blog section ends here -->
+        </section>
+       
+        <!-- main section ends here -->
+     </main>
+
+    <!-- FOOTER SECTION -->
+     <footer>
+        <article class="footer-top">
+            <!-- the first div in the footer -->
+            <article class="style-hub">
+                <h3>STYLEHUB</h3>
+                <p>
+                    Your one-stop shop for trendy fashion and premium quality products.
+                </p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </article>
+
+            <!-- the second div in the footer -->
+             <article class="shop">
+                <h4>SHOP</h4>
+                <ul>
+                    <li>Men</li>
+                    <li>Woman</li>
+                    <li>Kids</li>
+                    <li>Shoes</li>
+                    <li>Accessories</li>
+                </ul>
+             </article>
+
+             <!-- the theard div in the footer -->
+              <article class="customer-service">
+                <h4>CUSTOMER SERVICE</h4>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Track Order</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Shipping info</li>
+                    <li>FAQ</li>
+                </ul>
+              </article>
+
+              <!-- the fourth div in the footer -->
+               <article class="about-us">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+               </article>
+
+               <!-- the fifth div in the footer -->
+                <article class="footer-newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <p>Subcribe to get special offers, free giveaways and once-in-a-lifetime deals.</p>
+                    <div class="footer-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button><i class="fa-regular fa-paper-plane"></i></button>
+                    </div>
+                </article>
+            <!-- footer top ends here -->
+        </article>
+
+        <article class="footer-bottom">
+            <p class="copy-rights">
+                &copy; 2024 STYLEHUB, All Rights Reserved.
+            </p>
+            <!-- footer bottom ends here -->
+        </article>
+        <!-- footer ends here -->
+     </footer>
+</body>
+</html>

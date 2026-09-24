@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+/* MAIN */
+main {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+/* SIDE BAR */
+.side-bar {
+    width: 15vw;
+    border-right: 0.2px solid lightgray;
+}
+.side-bar > div {
+    padding: 15px 0;
+    border-bottom: 0.2px solid lightgray;
+}
+.side-bar h4,
+.side-bar input[name],
+.side-bar label[for] {
+    margin-bottom: 10px;
+}
+.side-bar input[name],
+.side-bar label[for] {
+    color: gray;
+    font-size: 14px;
+}
+.color-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.color {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+.black {
+    background-color: black;
+}
+.gray {
+    background-color: gray;
+}
+.gold {
+    background-color: gold;
+}
+.deepblue {
+    background-color: deepskyblue;
+}
+.green {
+    background-color: green;
+}
+.brown {
+    background-color: brown;
+}
+.side-bar .brands {
+    border: none;
+}
+/* PRODUCTS SECTION */
+.products-section {
+    width: 85vw;
+    margin: 10px auto;
+}
+.product-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+.filter {
+    /* this filter container will work on mobile view */
+    width: 100px;
+    padding: 6px 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: none;
+    transition-duration: 0.5s;
+}
+.filter:hover {
+    background-color: lightgray;
+}
+.filter:hover > .filter-content {
+    display: block;
+}
+.filter-content {
+    display: none;
+    width: 200px;
+    background-color: #FAF8F5;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px 0 10px;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    z-index: 10;
+}
+
+.filter-content > div {
+    margin-bottom: 10px;
+}
+.filter-content h4,
+.filter-content input[name],
+.filter-content label[for] {
+    margin-bottom: 10px;
+}
+.filter-content input[name],
+.filter-content label[for] {
+    color: gray;
+    font-size: 14px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+/* items -> it means card */
+.item {
+    padding: 8px;
+    border: 0.5px solid lightgray;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+}
+.item:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.item-img-container {
+    height: 100px;
+    background-size: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.tag {
+    font-size: 0.6rem;
+    color: white;
+    background-color: black;
+    padding: 4px 8px;
+    border-radius: 3px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.fav {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.item-name, .reviews, .item-price {
+    margin-bottom: 10px;
+}
+.item-name {
+    font-weight: 600;
+}
+.reviews {
+    color: gold;
+}
+.item-price {
+    font-weight: bold;
+}
+.add-to-cart {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: #A86645;
+    padding: 10px 14px;
+    transition-duration: 0.5s;
+    font-weight: 600;
+}
+.add-to-cart:hover {
+    background-color: #8D5338;
+}
+.img-1 {
+    background-image: url('./images/item-1.png');
+}
+.img-2 {
+    background-image: url('./images/item-2.png');
+}
+.img-3 {
+    background-image: url('./images/item-3.png');
+}
+.img-4 {
+    background-image: url('./images/item-4.png');
+}
+.img-5 {
+    background-image: url('./images/item-5.png');
+}
+.img-6 {
+    background-image: url('./images/item-6.png');
+}
+.img-7 {
+    background-image: url('./images/item-7.png');
+}
+.img-8 {
+    background-image: url('./images/item-8.png');
+}
+.img-9 {
+    background-image: url('./images/item-9.png');
+}
+.img-10 {
+    background-image: url('./images/item-10.png');
+}
+.img-11 {
+    background-image: url('./images/item-11.png');
+}
+.img-12 {
+    background-image: url('./images/item-12.png');
+}
+
+/* ---- STYLE'S FOR MULTIPLE SCREEN SIZE ---- */
+/* mobile portrait, mobile lanscape and tablets */
+@media (max-width:991.99px) {
+    .side-bar {
+        display: none;
+    }
+    .filter {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+}
